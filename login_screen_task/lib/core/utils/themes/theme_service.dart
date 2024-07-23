@@ -4,10 +4,10 @@ class ThemeService {
   const ThemeService._();
   static const instance = ThemeService._();
   ThemeData get defaultTheme => ThemeData(
-        primaryColor: const Color.fromRGBO(118, 95, 217, 1),
+        primaryColor: const Color(0xFF83524D),
         fontFamily: 'SF-Arabic',
         colorScheme: const ColorScheme.light(
-          primary: Color.fromRGBO(118, 95, 217, 1),
+          primary: Color(0xFF83524D),
           background: Colors.white,
           onBackground: Colors.black,
           onSurface: Colors.grey,
