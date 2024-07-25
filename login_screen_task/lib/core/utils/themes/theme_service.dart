@@ -8,8 +8,6 @@ class ThemeService {
         fontFamily: 'SF-Arabic',
         colorScheme: const ColorScheme.light(
           primary: Color(0xFF83524D),
-          background: Colors.white,
-          onBackground: Colors.black,
           onSurface: Colors.grey,
           surface: Color(0xFFF2F2F7),
         ),
@@ -38,9 +36,9 @@ class ThemeService {
           // Large
           bodyLarge: TextStyle(
             color: Colors.black,
-            fontSize: 20,
-            fontWeight: FontWeight.w400,
-            height: 0.06,
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+            height: 0.08,
           ),
           // Headline 1
           displayLarge: TextStyle(
