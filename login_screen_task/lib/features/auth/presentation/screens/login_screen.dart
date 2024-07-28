@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen_task/core/utils/themes/theme_service.dart';
+import 'package:login_screen_task/features/auth/presentation/widgets/text_form_field_widget.dart';
 import 'package:login_screen_task/features/onboarding/presentation/widgets/button_widget.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -56,28 +57,91 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ),
                         const SizedBox(height: 20.0),
+                        const TextFormFieldWidget(
+                          hintText: 'Email, phone & username',
+                          width: 300, // Specify desired width here
+                        ),
+                        const SizedBox(height: 20.0),
+                        const TextFormFieldWidget(
+                          hintText: 'Password',
+                          width: 300, // Specify desired width here
+                        ),
+                        const SizedBox(height: 20.0),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(
                               child: Padding(
                                 padding: const EdgeInsets.all(15.0),
-                                child: Column(
-                                  crossAxisAlignment:
-                                      CrossAxisAlignment.stretch,
-                                  children: [
-                                    const SizedBox(height: 20.0),
-                                    ButtonWidget(
-                                      height: 30,
-                                      color: ThemeService.instance.defaultTheme
-                                          .colorScheme.primary,
-                                      text: 'Sign in',
-                                    ),
-                                  ],
+                                child: ButtonWidget(
+                                  height: 30,
+                                  color: ThemeService.instance.defaultTheme
+                                      .colorScheme.primary,
+                                  text: 'Sign in',
                                 ),
                               ),
                             ),
                           ],
+                        ),
+                        const SizedBox(height: 20.0),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Divider(
+                                thickness: 1,
+                                color: Colors.grey.shade400,
+                              ),
+                            ),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 8.0),
+                              child: Text('or'),
+                            ),
+                            Expanded(
+                              child: Divider(
+                                thickness: 1,
+                                color: Colors.grey.shade400,
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 20.0),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            IconButton(
+                              icon: Image.asset(
+                                  'assets//images/gmail.png'), // Replace with your asset path
+                              onPressed: () {},
+                            ),
+                            IconButton(
+                              icon: Image.asset(
+                                  'assets//images/facebook.png'), // Replace with your asset path
+                              onPressed: () {},
+                            ),
+                            IconButton(
+                              icon: Image.asset(
+                                  'assets//images/apple.png'), // Replace with your asset path
+                              onPressed: () {},
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 20.0),
+                        Center(
+                          child: RichText(
+                            text: TextSpan(
+                              style: Theme.of(context).textTheme.bodyMedium,
+                              children: [
+                                const TextSpan(text: "Don't have an account? "),
+                                TextSpan(
+                                  text: 'Register Now',
+                                  style: TextStyle(
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ),
                       ],
                     ),

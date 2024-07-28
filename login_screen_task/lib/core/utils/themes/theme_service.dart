@@ -10,7 +10,7 @@ class ThemeService {
         colorScheme: const ColorScheme.light(
           primary: Color(0xFF83524D),
           onSurface: Colors.black,
-          surface: Color(0xFFF2F2F7),
+          surface: Color.fromARGB(255, 196, 196, 197),
         ),
         textTheme: const TextTheme(
           // Xsmall
