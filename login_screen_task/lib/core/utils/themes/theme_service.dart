@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ThemeService {
   const ThemeService._();
   static const instance = ThemeService._();
   ThemeData get defaultTheme => ThemeData(
         primaryColor: const Color(0xFF83524D),
-        fontFamily: 'SF-Arabic',
+        fontFamily: GoogleFonts.notoSans().fontFamily,
         colorScheme: const ColorScheme.light(
           primary: Color(0xFF83524D),
-          onSurface: Colors.grey,
+          onSurface: Colors.black,
           surface: Color(0xFFF2F2F7),
         ),
         textTheme: const TextTheme(
@@ -23,15 +24,15 @@ class ThemeService {
           bodySmall: TextStyle(
             color: Colors.black,
             fontSize: 13,
-            fontWeight: FontWeight.w400,
-            height: 0.09,
+            fontWeight: FontWeight.w500,
+            // height: 0.09,
           ),
           // Base
           bodyMedium: TextStyle(
             color: Colors.black,
-            fontSize: 16,
-            fontWeight: FontWeight.w400,
-            height: 0.07,
+            fontSize: 14,
+            fontWeight: FontWeight.bold,
+            height: 1.5,
           ),
           // Large
           bodyLarge: TextStyle(
@@ -65,7 +66,7 @@ class ThemeService {
           headlineMedium: TextStyle(
             color: Colors.black,
             fontSize: 39,
-            fontWeight: FontWeight.w400,
+            fontWeight: FontWeight.w900,
             height: 0.03,
           ),
           // Headline 5
@@ -78,9 +79,9 @@ class ThemeService {
           // Headline 6
           titleLarge: TextStyle(
             color: Colors.black,
-            fontSize: 25,
-            fontWeight: FontWeight.w400,
-            height: 0.05,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            height: 1.5,
           ),
         ),
       );

@@ -1,6 +1,6 @@
 enum Routes {
-  splash('/'),
-  login('/login'),
+  splash('/splash'),
+  login('/'),
   register('/register');
 
   const Routes(this.path);

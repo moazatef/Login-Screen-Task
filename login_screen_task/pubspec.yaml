@@ -11,6 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   form_field_validator: ^1.1.0 
+  google_fonts: ^6.2.1
 
 
  
@@ -21,10 +22,7 @@ dev_dependencies:
   flutter_lints: ^3.0.0
 
 flutter:
-  fonts:
-      - family: SF-Arabic
-        fonts:
-          - asset: assets/fonts/SFArabic-Regular.ttf
+ 
   uses-material-design: true
   assets:
     - assets/images/image1.jpg
