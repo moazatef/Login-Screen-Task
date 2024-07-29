@@ -26,5 +26,5 @@ To get started, clone the repository and install the dependencies:
 
 ```sh
 git clone https://github.com/moazatef/login_screen_task.git
-cd your-repo
+cd login_screen_task
 flutter pub get
