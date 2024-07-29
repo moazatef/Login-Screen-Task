@@ -1,16 +1,30 @@
-# login_screen_task
+# Flutter Login and Registration Screens
 
-A new Flutter project.
+![Project Logo](assets/images/logo.png)
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+This Flutter project includes a simple implementation of login and registration screens.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Login screen
+- Registration screen
+- Responsive UI
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+### Login Screen
+![Login Screen](assets/images/log.jpg)
+
+### Registration Screen
+![Registration Screen](assets/images/reg.jpg)
+
+## Installation
+
+To get started, clone the repository and install the dependencies:
+
+```sh
+git clone https://github.com/moazatef/login_screen_task.git
+cd your-repo
+flutter pub get
