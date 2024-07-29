@@ -25,6 +25,6 @@ This Flutter project includes a simple implementation of login and registration 
 To get started, clone the repository and install the dependencies:
 
 ```sh
-git clone https://github.com/moazatef07/login_screen_task.git
+git clone https://github.com/moazatef/login_screen_task.git
 cd your-repo
 flutter pub get
