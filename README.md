@@ -1,8 +1,5 @@
 # Flutter Login and Registration Screens
 
-![Project Logo](![logo](https://github.com/user-attachments/assets/5a3fd14a-538a-472b-abcf-11ff5c69ed45)
-)
-
 ## Description
 
 This Flutter project includes a simple implementation of login and registration screens.
