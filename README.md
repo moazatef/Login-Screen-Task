@@ -4,7 +4,7 @@
 
 ## Description
 
-This Flutter project includes a simple implementation of login and registration screens
+This Flutter project includes a simple implementation of login and registration screens.
 
 ## Features
 
