@@ -29,5 +29,9 @@ flutter:
     - assets/images/gmail.png
     - assets/images/facebook.png
     - assets/images/apple.png
+    - assets/images/logo.png
+    - assets/images/reg.jpg
+    - assets/images/log.jpg
+    - assets/images/splach.jpg
     
   
