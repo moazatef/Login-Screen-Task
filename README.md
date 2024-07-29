@@ -16,8 +16,8 @@ This Flutter project includes a simple implementation of login and registration 
 ## Screenshots
 
 ### Login Screen
-![Login Screen]((https://github.com/user-attachments/assets/f8e983a4-068b-4fe8-93ea-f242ee105a6b)
-es/log.JPG)
+![Login Screen]![reg](https://github.com/user-attachments/assets/7e863832-b6db-43ee-907e-8bc41855c641)
+()
 
 ### Registration Screen
 ![Registration Screen]![reg](https://github.com/user-attachments/assets/7e863832-b6db-43ee-907e-8bc41855c641)
