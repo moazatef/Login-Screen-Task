@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen_task/features/onboarding/presentation/widgets/button_widget.dart';
 
+import '../../../../core/utils/routes/routes_enum.dart';
+
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +23,7 @@ class SplashScreen extends StatelessWidget {
           ),
           const SizedBox(height: 25),
           Text(
-            'We unite around common objectives, ensuring every team member’s efforts contribute towards a collective success',
+            'We unite around common objectives, ensuring every team member’s efforts',
             style: Theme.of(context).textTheme.bodyMedium,
             textAlign: TextAlign.center,
           ),
@@ -33,16 +34,22 @@ class SplashScreen extends StatelessWidget {
               mainAxisAlignment:
                   MainAxisAlignment.spaceBetween, // Adjust alignment as needed
               children: [
-                const Expanded(
+                Expanded(
                   child: ButtonWidget(
+                    onPressed: () {
+                      Navigator.pushNamed(context, Routes.login.path);
+                    },
                     height: 60,
-                    text: 'Sign Up',
+                    text: 'Sign in',
                     color: Colors.black,
                   ),
                 ),
                 const SizedBox(width: 20.0), // Add spacing between the buttons
                 Expanded(
                   child: ButtonWidget(
+                    onPressed: () {
+                      Navigator.pushNamed(context, Routes.register.path);
+                    },
                     height: 60,
                     text: 'Register',
                     color: Theme.of(context).colorScheme.primary,

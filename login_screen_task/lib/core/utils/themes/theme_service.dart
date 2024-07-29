@@ -6,7 +6,7 @@ class ThemeService {
   static const instance = ThemeService._();
   ThemeData get defaultTheme => ThemeData(
         primaryColor: const Color(0xFF83524D),
-        fontFamily: GoogleFonts.notoSans().fontFamily,
+        fontFamily: GoogleFonts.ubuntu().fontFamily,
         colorScheme: const ColorScheme.light(
           primary: Color(0xFF83524D),
           onSurface: Colors.black,
